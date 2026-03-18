@@ -16,6 +16,8 @@ public class Product {
     private double price;
 
 
+
+
     public void reduceEstoque(int value){
         if (value <= 0)
             throw new IllegalArgumentException("valor nao pode ser negativo");
