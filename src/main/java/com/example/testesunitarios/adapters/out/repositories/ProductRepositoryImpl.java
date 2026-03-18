@@ -16,26 +16,27 @@ public class ProductRepositoryImpl implements ProductRepository {
 
     @Override
     public Product save(Product product) {
-        return null;
+        return productRepository.save(product);
     }
 
     @Override
     public Product findById(UUID id) {
-        return null;
+        return productRepository.findById(id);
     }
 
     @Override
     public List<Product> findAll() {
-        return List.of();
+        return productRepository.findAll();
     }
 
     @Override
     public void deleteById(UUID id) {
+        productRepository.deleteById(id);
 
     }
 
     @Override
     public Product update(Product product) {
-        return null;
+        return productRepository.update(product);
     }
 }
